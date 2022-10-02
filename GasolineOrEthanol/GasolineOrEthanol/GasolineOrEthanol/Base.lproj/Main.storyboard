@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GasolineOrEthanol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKJ-w8-F33">
+                                <rect key="frame" x="25" y="97" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-Cp-phy">
+                                <rect key="frame" x="25" y="168" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvf-xR-hI1">
+                                <rect key="frame" x="25" y="253" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fn-9kV">
+                                <rect key="frame" x="25" y="194" width="340" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AC5-v5-ZAn">
+                                <rect key="frame" x="25" y="279" width="340" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dji-eO-5Wn">
+                                <rect key="frame" x="25" y="489.66666666666669" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-aq-trd">
+                                <rect key="frame" x="25" y="404.66666666666669" width="340" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="calculateBestOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Bo-5S-gIf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFN-WX-Z3I">
+                                <rect key="frame" x="25" y="515.66666666666663" width="340" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="f23-Xg-g4m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Brf-aq-trd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4uJ-dW-4mD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AC5-v5-ZAn" secondAttribute="trailing" constant="25" id="8V6-XZ-7Vl"/>
+                            <constraint firstItem="YnD-Cp-phy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8hG-Sa-J36"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YnD-Cp-phy" secondAttribute="trailing" constant="25" id="9Nk-z9-Etc"/>
+                            <constraint firstItem="nvf-xR-hI1" firstAttribute="top" secondItem="mMI-fn-9kV" secondAttribute="bottom" constant="25" id="Ac1-ay-ho5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nvf-xR-hI1" secondAttribute="trailing" constant="25" id="Dy8-zG-tod"/>
+                            <constraint firstItem="mMI-fn-9kV" firstAttribute="top" secondItem="YnD-Cp-phy" secondAttribute="bottom" constant="5" id="EdH-lb-0pm"/>
+                            <constraint firstItem="nFN-WX-Z3I" firstAttribute="top" secondItem="Dji-eO-5Wn" secondAttribute="bottom" constant="5" id="GP6-lx-NW2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mMI-fn-9kV" secondAttribute="trailing" constant="25" id="JWi-cQ-XFY"/>
+                            <constraint firstItem="AC5-v5-ZAn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Nzx-Xu-uwJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nKJ-w8-F33" secondAttribute="trailing" constant="25" id="OrD-bW-ecg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nFN-WX-Z3I" secondAttribute="trailing" constant="25" id="Vlg-Py-iNr"/>
+                            <constraint firstItem="nKJ-w8-F33" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="X1u-8l-CGs"/>
+                            <constraint firstItem="nKJ-w8-F33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ZB7-YP-u8h"/>
+                            <constraint firstItem="AC5-v5-ZAn" firstAttribute="top" secondItem="nvf-xR-hI1" secondAttribute="bottom" constant="5" id="bGS-xj-FPB"/>
+                            <constraint firstItem="Dji-eO-5Wn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="eIn-LY-Cbp"/>
+                            <constraint firstItem="Brf-aq-trd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="exr-48-Nmo"/>
+                            <constraint firstItem="nvf-xR-hI1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="f4n-Za-dMw"/>
+                            <constraint firstItem="Dji-eO-5Wn" firstAttribute="top" secondItem="Brf-aq-trd" secondAttribute="bottom" constant="50" id="h8q-pF-Ezj"/>
+                            <constraint firstItem="mMI-fn-9kV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="j3h-h1-Q13"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dji-eO-5Wn" secondAttribute="trailing" constant="25" id="jiP-Lk-EGU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Brf-aq-trd" secondAttribute="trailing" constant="25" id="ngk-e9-F6r"/>
+                            <constraint firstItem="YnD-Cp-phy" firstAttribute="top" secondItem="nKJ-w8-F33" secondAttribute="bottom" constant="50" id="rn1-Go-ouR"/>
+                            <constraint firstItem="nFN-WX-Z3I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="tha-CE-JV7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="analysisResultLabel" destination="nFN-WX-Z3I" id="Bvm-T0-bly"/>
+                        <outlet property="appNameLabel" destination="nKJ-w8-F33" id="8wv-s1-1Jl"/>
+                        <outlet property="calculationButton" destination="Brf-aq-trd" id="ctP-Ub-Sx9"/>
+                        <outlet property="ethanolNameLabel" destination="nvf-xR-hI1" id="aez-lh-0tw"/>
+                        <outlet property="ethanolPriceTextField" destination="AC5-v5-ZAn" id="pnW-hD-jfw"/>
+                        <outlet property="gasolineNameLabel" destination="YnD-Cp-phy" id="Wbu-zX-rnm"/>
+                        <outlet property="gasolinePriceTextField" destination="mMI-fn-9kV" id="GKd-x1-KQM"/>
+                        <outlet property="resultLabel" destination="Dji-eO-5Wn" id="5Ux-rR-d62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
